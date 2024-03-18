@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Interactive Humanoid: Online Full-Body Motion Reaction Synthesis with Social Affordance Canonicalization and Forecasting.">
+        content="InterHumanoid: Online Full-Body Human Motion Reaction Synthesis with Social Affordance Forecasting and Canonicalization.">
   <meta name="keywords" content="reaction, interaction">
   <meta name="viewport" content="width=device-width, initial-scale=0.8">
-  <title>Interactive Humanoid: Online Full-Body Motion Reaction Synthesis with Social Affordance Canonicalization and Forecasting</title>
+  <title>InterHumanoid: Online Full-Body Human Motion Reaction Synthesis with Social Affordance Forecasting and Canonicalization</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -49,7 +49,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title" style="font-size:40px">Interactive Humanoid: Online Full-Body Motion Reaction Synthesis with Social Affordance Canonicalization and Forecasting</h1>
+          <h1 class="title is-1 publication-title" style="font-size:35px">InterHumanoid: Online Full-Body Motion Reaction Synthesis with Social Affordance Forecasting and Canonicalization</h1>
           <!-- <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href=""></a>,</span> -->
@@ -313,10 +313,8 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We focus on the human-humanoid interaction task optionally with an object. We propose a new task named online full-body motion reaction synthesis, which generates humanoid reactions based on the human actor's motions. The previous work only focuses on human interaction without objects and generates body reactions without hand. Besides, they also do not consider the task as an online setting, which means the inability to observe information beyond the current moment in practical situations. 
-To support this task, we construct two datasets named HHI and CoChair and propose a unified method. Specifically, we propose to construct a social affordance representation. We first select a social affordance carrier and use SE(3)-Equivariant Neural Networks to learn the local frame for the carrier, then we canonicalize the social affordance. Besides, we propose a social affordance forecasting scheme to enable the reactor to predict based on the imagined future.
-Experiments demonstrate that our approach can effectively generate high-quality reactions on HHI and CoChair. Furthermore, we also validate our method on existing human interaction datasets Interhuman and Chi3D.
-          </p>
+            We focus on the human-humanoid interaction task optionally with an object. We propose a new task named online full-body motion reaction synthesis, which generates humanoid reactions based on the human actor's motions. The previous work only focuses on human interaction without objects and generates body reactions without hand. Besides, they also do not consider the task as an online setting, which means the inability to observe information beyond the current moment in practical situations.  To support this task, we construct two datasets named HHI and CoChair and propose a unified method.  Specifically, we propose to select a social affordance carrier to construct the social affordance representation. Then we leverage a social affordance forecasting scheme to enable the reactor to predict based on the imagined future. We also use SE(3)-Equivariant Neural Networks to learn the local frame for the carrier, and then we canonicalize the social affordance.  Experiments demonstrate that our approach can effectively generate high-quality reactions on HHI and CoChair. Furthermore, we also validate our method on existing human interaction datasets Interhuman and Chi3D in real-time at 25 fps. We will release the datasets upon acceptance. 
+         </p>
           
         </div>
       </div>
@@ -364,7 +362,30 @@ Experiments demonstrate that our approach can effectively generate high-quality 
   </div>
 </section> -->
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Social Affordance Forecasting</h2>
+        <div class="content has-text-justified">
+          <p>
+            At the training stage, the humanoid reactor can access all motions of the actor. At the prediction stage in the real world, the humanoid reactor can only observe the past motions of the human actor. The forecasting module can anticipate the motions that the human will take.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
 
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <center><img id="teaser" width="100%" src="./static/images/pipeline1.png" margin: 0 auto;></center>
+    </div>
+  </div>
+</section>
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -392,30 +413,7 @@ Experiments demonstrate that our approach can effectively generate high-quality 
 </section>
 
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Social Affordance Forecasting</h2>
-        <div class="content has-text-justified">
-          <p>
-            At the training stage, the humanoid reactor can access all motions of the actor. At the prediction stage in the real world, the humanoid reactor can only observe the past motions of the human actor. The forecasting module can anticipate the motions that the human will take.
-          </p>
-        </div>
-      </div>
-    </div>
-    
-  </div>
-</section>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <center><img id="teaser" width="100%" src="./static/images/pipeline1.png" margin: 0 auto;></center>
-    </div>
-  </div>
-</section>
 
 <!-- <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
